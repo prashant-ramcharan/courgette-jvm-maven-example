@@ -2,11 +2,11 @@ package suites;
 
 import courgette.api.CourgetteOptions;
 import courgette.api.CourgetteRunLevel;
-import courgette.api.junit.Courgette;
+import courgette.api.testng.TestNGCourgette;
 import cucumber.api.CucumberOptions;
-import org.junit.runner.RunWith;
+import org.testng.annotations.Test;
 
-@RunWith(Courgette.class)
+@Test
 @CourgetteOptions(
         threads = 10,
         runLevel = CourgetteRunLevel.SCENARIO,
@@ -20,9 +20,8 @@ import org.junit.runner.RunWith;
                 plugin = {
                         "pretty",
                         "json:build/cucumber-report/cucumber.json",
-                        "html:build/cucumber-report/cucumber.html",
-                        "junit:build/cucumber-report/cucumber.xml"},
+                        "html:build/cucumber-report/cucumber.html"},
                 strict = true
         ))
-public class ScenarioSuite {
+public class TestNGScenarioSuite extends TestNGCourgette {
 }
