@@ -8,6 +8,11 @@
     <artifactId>courgette-jvm-example</artifactId>
     <version>1.0</version>
 
+    <properties>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+    </properties>
+
     <repositories>
         <repository>
             <id>jcenter</id>
@@ -19,7 +24,7 @@
         <dependency>
             <groupId>io.github.prashant-ramcharan</groupId>
             <artifactId>courgette-jvm</artifactId>
-            <version>4.6.2</version>
+            <version>5.0.0</version>
         </dependency>
 
         <dependency>

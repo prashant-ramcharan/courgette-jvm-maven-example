@@ -12,17 +12,16 @@ import org.junit.runner.RunWith;
         runLevel = CourgetteRunLevel.SCENARIO,
         rerunFailedScenarios = true,
         showTestOutput = true,
-        reportTargetDir = "build",
+        reportTargetDir = "target",
         cucumberOptions = @CucumberOptions(
                 features = "src/test/resources/features",
                 glue = "steps",
                 tags = {"@regression", "not @excluded"},
                 plugin = {
                         "pretty",
-                        "json:build/cucumber-report/cucumber.json",
-                        "html:build/cucumber-report/cucumber.html",
-                        "junit:build/cucumber-report/cucumber.xml"},
-                strict = true
+                        "json:target/cucumber-report/cucumber.json",
+                        "html:target/cucumber-report/cucumber.html",
+                        "junit:target/cucumber-report/cucumber.xml"}
         ))
 public class ScenarioSuite {
 }
