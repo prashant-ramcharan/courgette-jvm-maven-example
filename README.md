@@ -1,4 +1,4 @@
-# Courgette-JVM Example
+# Courgette-JVM with Maven Example
 
 An example project showing how to use Courgette-JVM with Maven.
 
