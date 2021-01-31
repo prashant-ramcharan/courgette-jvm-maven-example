@@ -24,7 +24,7 @@
         <dependency>
             <groupId>io.github.prashant-ramcharan</groupId>
             <artifactId>courgette-jvm</artifactId>
-            <version>5.9.1</version>
+            <version>5.9.2</version>
         </dependency>
 
         <dependency>
