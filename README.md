@@ -15,4 +15,7 @@ An example project showing how to use Courgette-JVM with Maven.
     * Option 2: Execute Maven goal
     ````maven
         mvn test
+        
+        // enable logging
+        mvn test -X
     ````
