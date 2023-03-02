@@ -43,6 +43,7 @@
                     <includes>
                         <include>**/suites/ScenarioSuite.class</include>
                     </includes>
+                    <forkNode implementation="org.apache.maven.plugin.surefire.extensions.SurefireForkNodeFactory"/>
                 </configuration>
                 <dependencies>
                     <dependency>
