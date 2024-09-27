@@ -21,7 +21,7 @@ public class TestSteps {
         WebDriverManager.chromedriver().setup();
 
         ChromeOptions options = new ChromeOptions();
-        options.setHeadless(true);
+        options.addArguments("--headless");
         driver = new ChromeDriver(options);
     }
 
